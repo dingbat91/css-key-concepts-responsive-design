@@ -1,20 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text&family=Merienda:wght@300;600&display=swap");
 :root {
-    --coral: #F05D5E;
-    --teal: #0F7173;
-    --light: #E7ECEF;
-    --dark: #272932;
-    --camel: #D8A47F;
+	--coral: #f05d5e;
+	--teal: #0f7173;
+	--light: #e7ecef;
+	--dark: #272932;
+	--camel: #d8a47f;
 }
 
-body {
-    background-color: var(--light);
+.pagetitle {
+	font-family: "Merienda", cursive;
+}
+
+.subtitle {
+	font-family: "Merienda", cursive;
+	font-weight: 300;
+}
+
+.details {
+	width: 95%;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.card-container {
+	display: flex;
+	margin: auto;
+}
+
+h3 {
+	font-size: 1.25rem;
+}
+
+p {
+	font-family: "Golos Text", sans-serif;
 }
 
 .card {
-    padding: 10px;
-    margin: 10px;
+	font-family: "Golos Text", sans-serif;
+	border: black 2px solid;
+	display: grid;
+	box-shadow: 1px 2px black;
+	margin: 10px;
 }
 
-img {
-    width: 250px;
+.cat-name {
+	grid-column: 1;
+	grid-row: 1;
+	place-self: center;
+	text-transform: capitalize;
+	text-shadow: 1.15px 1.5px gray;
+	text-decoration: solid 1px black;
+}
+
+.pet-pic {
+	grid-column: 1;
+	grid-row: 2;
+	place-self: center;
+	border: 3px solid black;
+	box-shadow: 2px 2px black;
+	height: 250px;
+	width: 250px;
+	object-fit: cover;
+	margin: 10px;
+}
+
+.cat-details {
+	grid-column: 1 2;
+	grid-row: 3;
+}
+.cat-details p {
+	margin: 3px;
+}
+.cat-details p:first-child {
+	margin-top: 10px;
+}
+
+body {
+	background-color: var(--light);
+}
+
+h1 {
+	font-size: 2.25rem;
+}
+
+p {
+	font-size: 0.75rem;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 999px) {
+	h1 {
+		font-size: 3rem;
+	}
+
+	p {
+		font-size: 1.1rem;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	h1 {
+		font-size: 3.25rem;
+	}
+
+	p {
+		font-size: 1.2rem;
+	}
 }
